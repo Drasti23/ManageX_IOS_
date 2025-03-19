@@ -14,7 +14,7 @@ struct SplashScreenView: View {
         NavigationView {
             ZStack {
                 if isActive {
-                    SignInView() // ✅ Navigate to SignInView
+                    SignInView() 
                 } else {
                     VStack {
                         Image(systemName: "cart.fill")
@@ -33,7 +33,7 @@ struct SplashScreenView: View {
                     .background(Color.white)
                     .onAppear {
                         DispatchQueue.main.asyncAfter(deadline: .now() + 3) {
-                            isActive = true // ✅ Auto-transition to SignInView
+                            isActive = true 
                         }
                     }
                 }
