@@ -10,25 +10,25 @@ import SwiftUI
 struct HomePageView: View {
     var body: some View {
         TabView {
-            // POS Tab
+           
             POSView()
                 .tabItem {
-                    Label("POS", systemImage: "cart.fill") // Using SF Symbol for POS
+                    Label("POS", systemImage: "cart.fill")
                 }
 
-            // Manager Portal Tab
-            ManagerPortalView()  // No need to pass isAuthenticated here
+            
+            ManagerPortalView()  
                 .tabItem {
                     Label("Manager Portal", systemImage: "person.3.fill") // Using SF Symbol for Manager Portal
                 }
 
-            // Time Register Tab
+            
             TimeRegisterView()
                 .tabItem {
-                    Label("Time Register", systemImage: "clock.fill") // Using SF Symbol for Time Register
+                    Label("Time Register", systemImage: "clock.fill")
                 }
         }
-        .accentColor(.blue) // Accent color for selected tab item
+        .accentColor(.blue) 
     }
 }
 

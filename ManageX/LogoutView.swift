@@ -5,8 +5,7 @@ import SwiftUI
 struct LogoutView: View {
     var body: some View {
         Button(action: {
-            EmployeeManager.clearEmployees() // Clear employee data on logout
-            // Handle other logout logic here
+            EmployeeManager.clearEmployees()
         }) {
             Text("Log Out")
                 .padding()
